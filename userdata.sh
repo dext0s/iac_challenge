@@ -2,6 +2,7 @@
 ##PARAMETERS##
 app_dir="/app/django_app"
 app_basedir=$( dirname $app_dir)
+app_user="appuser"
 install_script="install.sh"
 ##END OF PARAMETERS##
 yum update -y
