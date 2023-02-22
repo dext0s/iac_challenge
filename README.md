@@ -37,7 +37,7 @@ This are the only parameters that aren't autofilled and you have to provide an i
 2. **KeyName**: The EC2 SSH key pair for the instances.
 3. **OperatorEMail**: EMail which receives the alerts on scaling up or down of the ASG.
 
-Also watch out with the VPCCidr filed if you are doing the test in a non-sandbox account. As it creates a VPC it could mess with your network.
+Also watch out with the VPCCidr field if you are doing the test in a non-sandbox account. As it creates a VPC it could mess with your network.
 
 ## References 
 
