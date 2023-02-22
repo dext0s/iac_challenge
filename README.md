@@ -15,7 +15,7 @@ Website is deployed on the EC2 of the ASG though the UserData config.The userdat
 
 To publish the Website there is a Application Load Blancer which is internet facing. This is the only way the public can reach the Website.
 
-To access the instances by SSH a Bastion instance is created and publicly accesible by a certain Cidr range. Any network interface with the Bastion Security group can via SSH to the Website Servers.
+To access the instances by SSH a Bastion instance is created and publicly accesible by a certain Cidr range. Any network interface with the Bastion Security group can connect via SSH to the Website Servers.
 
 The Cloudformation stack deploy or update will fail and rollback if the ELB healtcheck of the instances fail. This way a rolling update can be done without a maintanance window.
 To check the healtcheck an IAM role with the proper configuration is set to the Website instances.
